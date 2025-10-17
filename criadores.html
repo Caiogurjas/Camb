@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criadores</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(to bottom right, #ffecd2, #fcb69f);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 20px;
+            color: #333;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            border-radius: 20px;
+            max-width: 900px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+            text-align: center;
+        }
+
+        .container img {
+            width: 90%;
+            max-width: 800px;
+            height: auto;
+            object-fit: cover;
+            margin: 15px 0;
+            border-radius: 20px;
+            border: 4px solid #fff;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        p {
+            text-align: center;
+            line-height: 1.6;
+            font-size: 1.1rem;
+            color: #555;
+            margin: 10px 0;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            .container { padding: 20px; }
+            .container img { width: 100%; height: auto; border-radius: 15px; }
+            p { font-size: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://cdn.discordapp.com/attachments/1319393414038421534/1428809397689122986/image.png?ex=68f3d9f2&is=68f28872&hm=ad7e6c85693f9736f687f454f045609d002ec3f7cdee112824042d462c94883d&" alt="Criadores">
+        <h1>Criadores do Site</h1>
+        <p><strong>Site por:</strong> Caio Gurgel Ferreira, João Elias Mendes Rodrigues</p>
+        <p><strong>Créditos imagens:</strong> Thiago Junio, Mariana Arantes, Gabriel Marques, Lucas Andre, Wander Gabriel, Lucas Machado</p>
+    </div>
+    <audio id="tema" loop>
+        <source src="https://cdn.discordapp.com/attachments/1319393414038421534/1428815819542106284/MONTAGEM_TOMADA_SLOWED.mp3?ex=68f3dfed&is=68f28e6d&hm=87d9f2fa9a975ba4eb94025036ca8c70d4197e9dc247b3a30dee77d170b8669b&">
+        Seu navegador não suporta áudio.
+    </audio>
+    <script>
+        // Faz o áudio começar assim que o usuário clicar em qualquer lugar
+        document.addEventListener('click', () => {
+            const audio = document.getElementById('tema');
+            audio.volume = 0.3; // opcional: define volume inicial
+            audio.play();
+        });
+    </script>
+</body>
+</html>
